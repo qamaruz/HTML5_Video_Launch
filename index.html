@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--<meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />-->
+		        
+        <title>ITB</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <!--<script src="common-files/js/jquery-1.10.2.min.js"></script> -->
+         <script src="floating.js"></script> 
+         <script src="jquery.js"></script> 
+         
+        <style>
+        </style>
+        
+    <script type="text/javascript">  
+    floatingMenu.add('floatdiv',  
+        {  
+            // Represents distance from left or right browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            targetLeft: 10,  
+            //targetRight: 10,  
+  
+            // Represents distance from top or bottom browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            targetTop: 20,  
+            //targetBottom: 10,  
+  
+            // Uncomment one of those if you need centering on  
+            // X- or Y- axis.  
+            // centerX: true,  
+             centerY: true,  
+  
+            // Remove this one if you don't want snap effect  
+            snap: true  
+        });  
+</script>      
+
+    </head>
+    <body onmousedown="playPause()">
+    <div id="mastercontainer">
+   <!-- <div id="header">This is the header</div>-->
+    <div id="content">
+    
+        <div id="innercontentmiddle">
+           <video id="video1" width="100%" height="100%" >
+  <source src="newvid.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+  </video>
+     <!--<div id="floatdiv" class="float">
+	  <br>
+	  <br>
+<b>Dengan Kalimah Bismillahirahmanirrahim, </b><br><br>
+<b> Beta melancarkan Majlis Ilmu 2014</b>
+</div>-->
+  
+        </div>
+    <!--<div id="footerclear"></div>-->
+</div>
+<!--<div id="footer">This is the footer</div>-->
+</div>
+  <script>
+  
+	var myVideo = document.getElementById("video1");
+  
+	function playPause() 
+	{
+		if(myVideo.paused)
+			myVideo.play();
+		else
+			myVideo.pause();
+	}
+  </script>
+
+</body>
+</html>  
